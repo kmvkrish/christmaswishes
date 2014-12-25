@@ -10,7 +10,7 @@ if client:
     print "Authenticated"
 
 def sendmsg(body):
-    message = client.messages.create(body=body+"\n\t--Krishna Manoj Varanasi",to="+918790763112",from_="+12024992570")
+    message = client.messages.create(body=body+"\n\t--Krishna Manoj Varanasi",to="your friend's number",from_="your twilio account number")
     print "From Manoj",client.messages.get(message.sid).status
 
 def getValues():
